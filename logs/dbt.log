@@ -1,0 +1,322 @@
+[0m15:43:37.751519 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CE11025D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CE12AB3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CE129E890>]}
+
+
+============================== 15:43:37.767093 | 03695065-d083-4737-b83f-4a0736d3ef94 ==============================
+[0m15:43:37.767093 [info ] [MainThread]: Running with dbt=1.7.19
+[0m15:43:37.772676 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\041985\\.dbt', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init cat_facts', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:43:37.779665 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/041985/.dbt')}
+[0m15:43:37.783546 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m15:43:37.798501 [debug] [MainThread]: Starter project path: C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Lib\site-packages\dbt\include\starter_project
+[0m15:43:37.892495 [info ] [MainThread]: 
+Your new dbt project "cat_facts" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:43:37.893491 [info ] [MainThread]: Setting up your profile.
+[0m16:01:28.815145 [info ] [MainThread]: Profile cat_facts written to C:\Users\041985\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:01:28.826103 [debug] [MainThread]: Command `dbt init` succeeded at 16:01:28.825107 after 1073.23 seconds
+[0m16:01:28.832080 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CE0D978D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CDBBD3110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020CE12B6FD0>]}
+[0m16:01:28.836671 [debug] [MainThread]: Flushing usage events
+[0m16:10:07.695481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E7A126390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E79F42650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E7A01DC90>]}
+
+
+============================== 16:10:07.701403 | c4ad1858-1592-49c9-8f28-e09d2aaa6a7b ==============================
+[0m16:10:07.701403 [info ] [MainThread]: Running with dbt=1.7.19
+[0m16:10:07.702400 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\041985\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:10:07.703397 [info ] [MainThread]: dbt version: 1.7.19
+[0m16:10:07.703397 [info ] [MainThread]: python version: 3.11.9
+[0m16:10:07.704393 [info ] [MainThread]: python path: C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Scripts\python.exe
+[0m16:10:07.704393 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m16:10:09.037535 [info ] [MainThread]: Using profiles dir at C:\Users\041985\.dbt
+[0m16:10:09.037535 [info ] [MainThread]: Using profiles.yml file at C:\Users\041985\.dbt\profiles.yml
+[0m16:10:09.038528 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\dbt_project.yml
+[0m16:10:09.039525 [info ] [MainThread]: adapter type: databricks
+[0m16:10:09.039525 [info ] [MainThread]: adapter version: 1.7.17
+[0m16:10:09.040521 [info ] [MainThread]: Configuration:
+[0m16:10:09.040521 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:10:09.041517 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:10:09.041517 [info ] [MainThread]: Required dependencies:
+[0m16:10:09.042514 [debug] [MainThread]: Executing "git --help"
+[0m16:10:09.111709 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:10:09.112705 [debug] [MainThread]: STDERR: "b''"
+[0m16:10:09.113702 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:10:09.114699 [info ] [MainThread]: Connection:
+[0m16:10:09.114699 [info ] [MainThread]:   host: dbc-48f1d309-b351.cloud.databricks.com
+[0m16:10:09.115695 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/962f4f94e03db11e
+[0m16:10:09.115695 [info ] [MainThread]:   catalog: silver
+[0m16:10:09.116776 [info ] [MainThread]:   schema: dbt
+[0m16:10:09.117775 [info ] [MainThread]: Registered adapter: databricks=1.7.17
+[0m16:10:09.118772 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1434859745872, session-id=None, name=debug, idle-time=0s, acquire-count=0, language=None, thread-identifier=(28156, 21368), compute-name=) - Creating connection
+[0m16:10:09.118772 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m16:10:09.119768 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1434859745872, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(28156, 21368), compute-name=) - Acquired connection on thread (28156, 21368), using default compute resource
+[0m16:10:09.120765 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1434859745872, session-id=None, name=debug, idle-time=0.0009965896606445312s, acquire-count=1, language=None, thread-identifier=(28156, 21368), compute-name=) - Checking idleness
+[0m16:10:09.120765 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1434859745872, session-id=None, name=debug, idle-time=0.0009965896606445312s, acquire-count=1, language=None, thread-identifier=(28156, 21368), compute-name=) - Retrieving connection
+[0m16:10:09.120765 [debug] [MainThread]: Using databricks connection "debug"
+[0m16:10:09.121762 [debug] [MainThread]: On debug: select 1 as id
+[0m16:10:09.121762 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:10:09.787106 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server: : Invalid access token.
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=0.6188170909881592/900.0, error-message=: Invalid access token., http-code=403, method=OpenSession, no-retry-reason=non-retryable error, original-exception=, query-id=None, session-id=None
+[0m16:10:09.790519 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server: : Invalid access token.
+[0m16:10:09.791614 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=1434859745872, session-id=None, name=debug, idle-time=0.0s, acquire-count=0, language=None, thread-identifier=(28156, 21368), compute-name=) - Released connection
+[0m16:10:09.792522 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:10:09.794515 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:10:09.798028 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\dbt_project.yml> not found
+
+[0m16:10:09.801018 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Runtime Error
+  Database Error
+    Error during request to server: : Invalid access token.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:10:09.806511 [debug] [MainThread]: Command `dbt debug` failed at 16:10:09.805512 after 3.41 seconds
+[0m16:10:09.806511 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:10:09.807508 [debug] [MainThread]: On debug: No close available on handle
+[0m16:10:09.807508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E7A105590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E7A151810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014E74A7C090>]}
+[0m16:10:09.808504 [debug] [MainThread]: Flushing usage events
+[0m16:11:08.999168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201057D86D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020108CC5390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020108CC6290>]}
+
+
+============================== 16:11:09.004160 | 4a9a63d9-6e58-42c7-913c-a102802e1b04 ==============================
+[0m16:11:09.004160 [info ] [MainThread]: Running with dbt=1.7.19
+[0m16:11:09.006671 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\041985\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:11:09.007668 [info ] [MainThread]: dbt version: 1.7.19
+[0m16:11:09.008664 [info ] [MainThread]: python version: 3.11.9
+[0m16:11:09.010660 [info ] [MainThread]: python path: C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Scripts\python.exe
+[0m16:11:09.011810 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m16:11:10.180845 [info ] [MainThread]: Using profiles dir at C:\Users\041985\.dbt
+[0m16:11:10.181843 [info ] [MainThread]: Using profiles.yml file at C:\Users\041985\.dbt\profiles.yml
+[0m16:11:10.181843 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\dbt_project.yml
+[0m16:11:10.183138 [info ] [MainThread]: adapter type: databricks
+[0m16:11:10.183138 [info ] [MainThread]: adapter version: 1.7.17
+[0m16:11:10.183138 [info ] [MainThread]: Configuration:
+[0m16:11:10.186143 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:11:10.187209 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:11:10.187209 [info ] [MainThread]: Required dependencies:
+[0m16:11:10.188490 [debug] [MainThread]: Executing "git --help"
+[0m16:11:10.262201 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:11:10.263314 [debug] [MainThread]: STDERR: "b''"
+[0m16:11:10.264349 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:11:10.264864 [info ] [MainThread]: Connection:
+[0m16:11:10.266046 [info ] [MainThread]:   host: dbc-48f1d309-b351.cloud.databricks.com
+[0m16:11:10.267067 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/962f4f94e03db11e
+[0m16:11:10.267590 [info ] [MainThread]:   catalog: silver
+[0m16:11:10.268691 [info ] [MainThread]:   schema: dbt
+[0m16:11:10.269710 [info ] [MainThread]: Registered adapter: databricks=1.7.17
+[0m16:11:10.270778 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2203873948304, session-id=None, name=debug, idle-time=0s, acquire-count=0, language=None, thread-identifier=(31592, 32304), compute-name=) - Creating connection
+[0m16:11:10.270778 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m16:11:10.271301 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2203873948304, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(31592, 32304), compute-name=) - Acquired connection on thread (31592, 32304), using default compute resource
+[0m16:11:10.272342 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2203873948304, session-id=None, name=debug, idle-time=0.0010402202606201172s, acquire-count=1, language=None, thread-identifier=(31592, 32304), compute-name=) - Checking idleness
+[0m16:11:10.272940 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2203873948304, session-id=None, name=debug, idle-time=0.001638650894165039s, acquire-count=1, language=None, thread-identifier=(31592, 32304), compute-name=) - Retrieving connection
+[0m16:11:10.273445 [debug] [MainThread]: Using databricks connection "debug"
+[0m16:11:10.273967 [debug] [MainThread]: On debug: select 1 as id
+[0m16:11:10.274514 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:11:10.902681 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server: : Invalid access token.
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=0.593294620513916/900.0, error-message=: Invalid access token., http-code=403, method=OpenSession, no-retry-reason=non-retryable error, original-exception=, query-id=None, session-id=None
+[0m16:11:10.908472 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server: : Invalid access token.
+[0m16:11:10.909476 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2203873948304, session-id=None, name=debug, idle-time=0.0s, acquire-count=0, language=None, thread-identifier=(31592, 32304), compute-name=) - Released connection
+[0m16:11:10.910983 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:11:10.913019 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:11:10.914551 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\dbt_project.yml> not found
+
+[0m16:11:10.920171 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Runtime Error
+  Database Error
+    Error during request to server: : Invalid access token.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:11:10.924166 [debug] [MainThread]: Command `dbt debug` failed at 16:11:10.923172 after 3.25 seconds
+[0m16:11:10.926161 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:11:10.927156 [debug] [MainThread]: On debug: No close available on handle
+[0m16:11:10.928153 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020108C8C090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020108C8D650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020123217810>]}
+[0m16:11:10.929151 [debug] [MainThread]: Flushing usage events
+[0m16:16:28.845229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5E4F93BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5E4A04450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5E4F90ED0>]}
+
+
+============================== 16:16:28.850127 | 0eb8362f-c144-4009-aece-1f2c942fc475 ==============================
+[0m16:16:28.850127 [info ] [MainThread]: Running with dbt=1.7.19
+[0m16:16:28.851123 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\041985\\Downloads\\GIT Repositories\\Sandbox_DataBricks\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:16:28.852120 [info ] [MainThread]: dbt version: 1.7.19
+[0m16:16:28.852120 [info ] [MainThread]: python version: 3.11.9
+[0m16:16:28.853116 [info ] [MainThread]: python path: C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Scripts\python.exe
+[0m16:16:28.854113 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m16:16:28.855109 [error] [MainThread]: Encountered an error:
+cannot access local variable 'summary_message' where it is not associated with a value
+[0m16:16:28.865167 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Lib\site-packages\dbt\cli\requires.py", line 91, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Lib\site-packages\dbt\cli\requires.py", line 76, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Lib\site-packages\dbt\cli\main.py", line 445, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Lib\site-packages\dbt\task\debug.py", line 123, in run
+    load_profile_status: SubtaskStatus = self._load_profile()
+                                         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Lib\site-packages\dbt\task\debug.py", line 208, in _load_profile
+    profile_names, summary_message = self._choose_profile_names()
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Lib\site-packages\dbt\task\debug.py", line 283, in _choose_profile_names
+    return profiles, summary_message
+                     ^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'summary_message' where it is not associated with a value
+
+[0m16:16:28.868066 [debug] [MainThread]: Command `dbt debug` failed at 16:16:28.868066 after 1.91 seconds
+[0m16:16:28.868066 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5E4FB7DD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5E4FB7B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C5E4F91090>]}
+[0m16:16:28.869063 [debug] [MainThread]: Flushing usage events
+[0m16:22:33.998476 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264555D0C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264555D24D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264555D3210>]}
+
+
+============================== 16:22:34.011164 | 7d67e301-688a-454c-b907-4b25de459bb8 ==============================
+[0m16:22:34.011164 [info ] [MainThread]: Running with dbt=1.7.19
+[0m16:22:34.014624 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\041985\\Downloads\\GIT Repositories\\Sandbox_DataBricks\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:22:34.015633 [info ] [MainThread]: dbt version: 1.7.19
+[0m16:22:34.017626 [info ] [MainThread]: python version: 3.11.9
+[0m16:22:34.017626 [info ] [MainThread]: python path: C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Scripts\python.exe
+[0m16:22:34.018622 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m16:22:35.232353 [info ] [MainThread]: Using profiles dir at C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.dbt
+[0m16:22:35.233262 [info ] [MainThread]: Using profiles.yml file at C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.dbt\profiles.yml
+[0m16:22:35.234259 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\dbt_project.yml
+[0m16:22:35.234259 [info ] [MainThread]: adapter type: databricks
+[0m16:22:35.235256 [info ] [MainThread]: adapter version: 1.7.17
+[0m16:22:35.236253 [info ] [MainThread]: Configuration:
+[0m16:22:35.236253 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:22:35.237249 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:22:35.238246 [info ] [MainThread]: Required dependencies:
+[0m16:22:35.240240 [debug] [MainThread]: Executing "git --help"
+[0m16:22:35.332099 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:22:35.334093 [debug] [MainThread]: STDERR: "b''"
+[0m16:22:35.334093 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:22:35.335089 [info ] [MainThread]: Connection:
+[0m16:22:35.335089 [info ] [MainThread]:   host: dbc-48f1d309-b351.cloud.databricks.com
+[0m16:22:35.336085 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/962f4f94e03db11e
+[0m16:22:35.337083 [info ] [MainThread]:   catalog: silver
+[0m16:22:35.337083 [info ] [MainThread]:   schema: dbt
+[0m16:22:35.338080 [info ] [MainThread]: Registered adapter: databricks=1.7.17
+[0m16:22:35.339076 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2630360496656, session-id=None, name=debug, idle-time=0s, acquire-count=0, language=None, thread-identifier=(21200, 31112), compute-name=) - Creating connection
+[0m16:22:35.339076 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m16:22:35.339076 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2630360496656, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(21200, 31112), compute-name=) - Acquired connection on thread (21200, 31112), using default compute resource
+[0m16:22:35.340122 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2630360496656, session-id=None, name=debug, idle-time=0.0010457038879394531s, acquire-count=1, language=None, thread-identifier=(21200, 31112), compute-name=) - Checking idleness
+[0m16:22:35.340122 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2630360496656, session-id=None, name=debug, idle-time=0.0010457038879394531s, acquire-count=1, language=None, thread-identifier=(21200, 31112), compute-name=) - Retrieving connection
+[0m16:22:35.341153 [debug] [MainThread]: Using databricks connection "debug"
+[0m16:22:35.341153 [debug] [MainThread]: On debug: select 1 as id
+[0m16:22:35.341153 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:22:35.879589 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server: : Invalid access token.
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=0.5106136798858643/900.0, error-message=: Invalid access token., http-code=403, method=OpenSession, no-retry-reason=non-retryable error, original-exception=, query-id=None, session-id=None
+[0m16:22:35.881092 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server: : Invalid access token.
+[0m16:22:35.882088 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2630360496656, session-id=None, name=debug, idle-time=0.0s, acquire-count=0, language=None, thread-identifier=(21200, 31112), compute-name=) - Released connection
+[0m16:22:35.882088 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m16:22:35.883085 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m16:22:35.884082 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\dbt_project.yml> not found
+
+[0m16:22:35.884082 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Runtime Error
+  Database Error
+    Error during request to server: : Invalid access token.
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m16:22:35.885105 [debug] [MainThread]: Command `dbt debug` failed at 16:22:35.885105 after 3.87 seconds
+[0m16:22:35.886104 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:22:35.886104 [debug] [MainThread]: On debug: No close available on handle
+[0m16:22:35.887101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002645560CDD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002645560D150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000264555B6110>]}
+[0m16:22:35.887101 [debug] [MainThread]: Flushing usage events
+[0m16:32:14.733605 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253AE926ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253AE901590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253AE407E50>]}
+
+
+============================== 16:32:14.737607 | f524d1f7-8287-44c2-8308-cc6c7676f3af ==============================
+[0m16:32:14.737607 [info ] [MainThread]: Running with dbt=1.7.19
+[0m16:32:14.738590 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\041985\\Downloads\\GIT Repositories\\Sandbox_DataBricks\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:32:14.738590 [info ] [MainThread]: dbt version: 1.7.19
+[0m16:32:14.739580 [info ] [MainThread]: python version: 3.11.9
+[0m16:32:14.740576 [info ] [MainThread]: python path: C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.venv\Scripts\python.exe
+[0m16:32:14.741592 [info ] [MainThread]: os info: Windows-10-10.0.22631-SP0
+[0m16:32:15.852700 [info ] [MainThread]: Using profiles dir at C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.dbt
+[0m16:32:15.853697 [info ] [MainThread]: Using profiles.yml file at C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\.dbt\profiles.yml
+[0m16:32:15.854733 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\dbt_project.yml
+[0m16:32:15.854733 [info ] [MainThread]: adapter type: databricks
+[0m16:32:15.854733 [info ] [MainThread]: adapter version: 1.7.17
+[0m16:32:15.856239 [info ] [MainThread]: Configuration:
+[0m16:32:15.857242 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m16:32:15.857242 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m16:32:15.858321 [info ] [MainThread]: Required dependencies:
+[0m16:32:15.858321 [debug] [MainThread]: Executing "git --help"
+[0m16:32:15.919679 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m16:32:15.920681 [debug] [MainThread]: STDERR: "b''"
+[0m16:32:15.921678 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m16:32:15.921678 [info ] [MainThread]: Connection:
+[0m16:32:15.922675 [info ] [MainThread]:   host: dbc-48f1d309-b351.cloud.databricks.com
+[0m16:32:15.923671 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/962f4f94e03db11e
+[0m16:32:15.924668 [info ] [MainThread]:   catalog: silver
+[0m16:32:15.924668 [info ] [MainThread]:   schema: dbt
+[0m16:32:15.926171 [info ] [MainThread]: Registered adapter: databricks=1.7.17
+[0m16:32:15.926171 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2558874663952, session-id=None, name=debug, idle-time=0s, acquire-count=0, language=None, thread-identifier=(35308, 32352), compute-name=) - Creating connection
+[0m16:32:15.927172 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m16:32:15.927172 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2558874663952, session-id=None, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(35308, 32352), compute-name=) - Acquired connection on thread (35308, 32352), using default compute resource
+[0m16:32:15.928197 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2558874663952, session-id=None, name=debug, idle-time=0.0010256767272949219s, acquire-count=1, language=None, thread-identifier=(35308, 32352), compute-name=) - Checking idleness
+[0m16:32:15.928197 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2558874663952, session-id=None, name=debug, idle-time=0.0010256767272949219s, acquire-count=1, language=None, thread-identifier=(35308, 32352), compute-name=) - Retrieving connection
+[0m16:32:15.928197 [debug] [MainThread]: Using databricks connection "debug"
+[0m16:32:15.929489 [debug] [MainThread]: On debug: select 1 as id
+[0m16:32:15.929489 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:32:17.581371 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2558874663952, session-id=01f1285f-ce45-1a64-b1ea-bc3257a9da58, name=debug, idle-time=0.0s, acquire-count=1, language=None, thread-identifier=(35308, 32352), compute-name=) - Connection created
+[0m16:32:17.583356 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1285f-ce45-1a64-b1ea-bc3257a9da58, command-id=Unknown) - Created cursor
+[0m16:32:37.534089 [debug] [MainThread]: SQL status: OK in 21.600000381469727 seconds
+[0m16:32:37.535592 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1285f-ce45-1a64-b1ea-bc3257a9da58, command-id=01f1285f-ce7d-1852-a966-433ea32876c9) - Closing cursor
+[0m16:32:37.827037 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(id=2558874663952, session-id=01f1285f-ce45-1a64-b1ea-bc3257a9da58, name=debug, idle-time=0.0s, acquire-count=0, language=None, thread-identifier=(35308, 32352), compute-name=) - Released connection
+[0m16:32:37.827995 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m16:32:37.829503 [info ] [MainThread]: [31m1 check failed:[0m
+[0m16:32:37.829503 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\041985\Downloads\GIT Repositories\Sandbox_DataBricks\dbt_project.yml> not found
+
+[0m16:32:37.830503 [debug] [MainThread]: Command `dbt debug` failed at 16:32:37.830503 after 26.52 seconds
+[0m16:32:37.830503 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m16:32:37.831653 [debug] [MainThread]: On debug: Close
+[0m16:32:37.831653 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1285f-ce45-1a64-b1ea-bc3257a9da58) - Closing connection
+[0m16:32:37.984630 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253AE977A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253AE977C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000253AE94DF90>]}
+[0m16:32:37.986624 [debug] [MainThread]: Flushing usage events
